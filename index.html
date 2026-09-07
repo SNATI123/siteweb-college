@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collège Bilingue Horizon Excellence | Enseignement Général & Scientifique au Cameroun</title>
+  <meta name="description" content="Établissement bilingue d'excellence au Cameroun. Sections Francophone et Anglophone, laboratoires modernes de physique, chimie et biologie marine. Formation rigoureuse pour GCE et Baccalauréat.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-location-dot"></i> Douala & Yaoundé, Cameroun</span>
+        <span><i class="fa-solid fa-phone"></i> +237 699 00 11 22 / +237 677 33 44 55</span>
+        <span class="desktop-only-info"><i class="fa-solid fa-envelope"></i> contact@horizon-excellence.cm</span>
+      </div>
+      <div class="top-bar-motto desktop-only-info">
+        <i class="fa-solid fa-award"></i> Devise : "Discipline - Travail - Succès"
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#accueil" class="logo">
+        <div class="logo-badge">H</div>
+        <div class="logo-text">
+          <span class="logo-title">HORIZON EXCELLENCE</span>
+          <span class="logo-subtitle">Collège Bilingue / Bilingual High School</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+          <li><a href="#subsystems" class="nav-link">Sections</a></li>
+          <li><a href="#laboratoires" class="nav-link">Laboratoires & TP</a></li>
+          <li><a href="#apropos" class="nav-link">À Propos</a></li>
+          <li><a href="#galerie" class="nav-link">Vie Scolaire</a></li>
+          <li><a href="#admission" class="nav-link">Admissions</a></li>
+          <li class="mobile-menu-cta">
+            <button class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" onclick="openAdmissionModal()">
+              <i class="fa-solid fa-graduation-cap"></i> Inscription 2026-2027
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary desktop-cta" onclick="openAdmissionModal()">
+          <i class="fa-solid fa-graduation-cap"></i> Inscription 2026-2027
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Wrapper -->
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge badge-cyan">
+            <i class="fa-solid fa-star"></i> Établissement Secondaire de Référence au Cameroun
+          </span>
+          <h1 class="hero-title">Formons les Leaders et Scientifiques de Demain</h1>
+          <p class="hero-description">
+            Le Collège Bilingue Horizon Excellence allie la rigueur de la Section Francophone et la méthode de la Section Anglophone. Avec nos laboratoires scientifiques ultra-équipés pour les travaux pratiques, nous préparons nos élèves aux plus grands succès académiques.
+          </p>
+          <div class="hero-buttons">
+            <a href="#laboratoires" class="btn btn-cyan">
+              <i class="fa-solid fa-flask-vial"></i> Découvrir nos Laboratoires
+            </a>
+            <a href="#subsystems" class="btn btn-secondary">
+              <i class="fa-solid fa-book-open"></i> Nos Programmes d'Étude
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="images/hero.jpg" alt="Élèves du Collège Bilingue Horizon Excellence au Cameroun">
+            <div class="hero-floating-badge">
+              <div class="badge-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 1.1rem; color: white;">100% de Réussite</strong>
+                <span style="font-size: 0.85rem; color: #94A3B8;">Session Examens Nationaux 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Réussite GCE A-Level & BAC</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Laboratoires de Pratique Spécialisés</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Sections (Francophone & Anglophone)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1500+</div>
+            <div class="stat-label">Élèves Épanouis & Encadrés</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subsystems Section (Francophone & Anglophone) -->
+    <section id="subsystems" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Bilinguisme Intégral</span>
+          <h2 class="section-title">Nos Deux Sections d'Enseignement</h2>
+          <p class="section-subtitle">Un cursus complet de la 6ème/Form 1 à la Terminale/Upper Sixth conforme aux exigences du Ministère de l'Enseignement Secondaire du Cameroun.</p>
+        </div>
+
+        <div class="subsystems-grid">
+          <!-- Section Francophone -->
+          <div class="subsystem-card francophone">
+            <div class="subsystem-header">
+              <span class="subsystem-flag">🇨🇲</span>
+              <div>
+                <h3 class="subsystem-title">Section Francophone</h3>
+                <span style="color: var(--royal-blue); font-size: 0.85rem; font-weight: 600;">Sous-système Francophone Camerounais</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Un enseignement rigoureux axé sur la maîtrise des sciences dures, des lettres et des technologies de l'information.
+            </p>
+            <ul class="subsystem-features">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Premier Cycle (6ème à 3ème)</strong> : Préparation intensive au BEPC.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Séries Scientifiques C & D</strong> : Mathématiques, Physique-Chimie, SVT approfondies.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Série TI (Technologies de l'Information)</strong> : Algorithmique, programmation et réseaux.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Série Littéraire A4</strong> : Langues vivantes, philosophie et sciences humaines.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Examens préparés : BEPC, Probatoire, Baccalauréat Général et Technique.</li>
+            </ul>
+            <button class="btn btn-secondary" style="width: 100%;" onclick="openProgramDetails('francophone')">
+              <i class="fa-solid fa-list-check"></i> Voir les détails des programmes
+            </button>
+          </div>
+
+          <!-- Section Anglophone -->
+          <div class="subsystem-card anglophone">
+            <div class="subsystem-header">
+              <span class="subsystem-flag">🇬🇧</span>
+              <div>
+                <h3 class="subsystem-title">Anglophone Section</h3>
+                <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600;">Cameroon Anglophone Sub-System</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Practical, inquiry-based education designed to foster critical thinking, scientific experimentations, and academic excellence.
+            </p>
+            <ul class="subsystem-features">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>First Cycle (Form 1 to Form 5)</strong> : Prep for GCE Ordinary Level (O-Level).</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>High School High Level (Lower & Upper Sixth)</strong> : Prep for GCE Advanced Level (A-Level).</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Science Stream</strong> : Physics, Chemistry, Biology, Pure & Further Math.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Arts & Economics Stream</strong> : Literature, History, Economics, Geography.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Examinations prepared: GCE O-Level & GCE A-Level (Science & Arts).</li>
+            </ul>
+            <button class="btn btn-secondary" style="width: 100%;" onclick="openProgramDetails('anglophone')">
+              <i class="fa-solid fa-list-check"></i> View Detailed Syllabus
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Laboratories & Practical Work Section (FEATURED HIGHLIGHT) -->
+    <section id="laboratoires" class="section lab-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-cyan"><i class="fa-solid fa-microscope"></i> Pratique Scientifique de Pointe</span>
+          <h2 class="section-title text-white">Nos 3 Laboratoires Expérimentaux</h2>
+          <p class="section-subtitle" style="color: #94A3B8;">
+            Pour permettre aux élèves de la Section Anglophone (GCE Practicals) et Francophone d'expérimenter la science dans des conditions de sécurité optimales : <strong>blouses blanches et gants blancs obligatoires</strong> pour tous les TP.
+          </p>
+        </div>
+
+        <!-- Lab Selector Tabs -->
+        <div class="lab-tabs">
+          <button class="lab-tab-btn active" data-lab="physics" onclick="switchLab('physics')">
+            <i class="fa-solid fa-bolt"></i> Labo de Physique (Électricité & Circuits)
+          </button>
+          <button class="lab-tab-btn" data-lab="chemistry" onclick="switchLab('chemistry')">
+            <i class="fa-solid fa-vial-circle-check"></i> Labo de Chimie (Dosages & Titrations)
+          </button>
+          <button class="lab-tab-btn" data-lab="biology" onclick="switchLab('biology')">
+            <i class="fa-solid fa-fish"></i> Labo de Biologie (Biologie Marine & Dissections)
+          </button>
+        </div>
+
+        <!-- Dynamic Lab Display Card -->
+        <div id="labDisplayCard" class="lab-display-card">
+          <!-- Default Content: Physics -->
+          <div class="lab-content">
+            <span class="badge badge-cyan" id="labCategoryBadge">Pratique Électrique & Électronique</span>
+            <h3 id="labTitle">Laboratoire de Physique & Électrocinétique</h3>
+            <p id="labDescription">
+              Équipé de bancs d'essais modernes, nos élèves de la section Anglophone et Francophone réalisent des branchements de circuits électriques réels sur plaques à essai (breadboards), mesurent des tensions et courants avec des multimètres digitaux et vérifient expérimentalement la loi d'Ohm et les lois de Kirchhoff.
+            </p>
+
+            <div class="lab-specs">
+              <div class="lab-specs-title">Matériel & Équipements de Pratique</div>
+              <ul class="lab-specs-list" id="labSpecsList">
+                <li><i class="fa-solid fa-check" style="color: var(--accent-cyan);"></i> Plaques à essai (Breadboards)</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-cyan);"></i> Multimètres digitaux & Oscilloscopes</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-cyan);"></i> Générateurs de tension continue/variable</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-cyan);"></i> Kit d'ampoules, LED, résistances</li>
+                <li><i class="fa-solid fa-shield-halved" style="color: var(--accent-gold);"></i> Sécurité : Blouses & Gants blancs</li>
+                <li><i class="fa-solid fa-award" style="color: var(--accent-gold);"></i> Prépa TP GCE Physics Practicals</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-cyan" onclick="openLabModal('physics')">
+              <i class="fa-solid fa-expand"></i> Explorer la fiche TP complète
+            </button>
+          </div>
+
+          <div class="lab-image-container">
+            <img id="labImage" src="images/physics.jpg" alt="Travaux pratiques de Physique au Collège Bilingue Horizon Excellence">
+            <div class="lab-equipment-tag" id="labEquipmentTag">
+              <i class="fa-solid fa-camera"></i> TP Montage de circuits sur Plaque à essai
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="principal-card">
+            <div class="principal-img-box">
+              <img src="images/principal.jpg" alt="Dr. Jean-Pierre Ndoumbe, Principal du Collège">
+            </div>
+            <div class="principal-info">
+              <h4>Dr. Jean-Pierre NDOUMBE</h4>
+              <p>Proviseur / Principal de l'Établissement</p>
+              <p class="principal-quote">
+                "Notre ambition au Cameroun n'est pas seulement de faire réussir les élèves aux examens du BAC et du GCE, mais d'inculquer la passion du savoir, la rigueur scientifique dans nos laboratoires et le goût du bilinguisme."
+              </p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="badge badge-primary">Notre Établissement</span>
+            <h2 class="section-title">Une Tradition d'Excellence Scientifique et Humaine</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">
+              Fondé avec la vision d'offrir une éducation bilingue intégrée de haut niveau au Cameroun, le <strong>Collège Bilingue Horizon Excellence</strong> s'impose comme une référence dans la formation des futurs cadres, ingénieurs, médecins et scientifiques du pays.
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(30,64,175,0.1); color: var(--royal-blue); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-microscope"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: var(--primary-navy);">Apprentissage Pratique par l'Expérimentation</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Tous nos cours de sciences sont couplés avec des travaux pratiques hebdomadaires obligatoires en laboratoire équipés.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(56,189,248,0.1); color: var(--accent-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-language"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: var(--primary-navy);">Bilinguisme Fluide & Échanges Culturels</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Journée Nationale du Bilinguisme, clubs de débat en anglais et en français, immersion linguistique continue.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(245,158,11,0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: var(--primary-navy);">Normes de Sécurité Strictes en Laboratoire</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Blouses blanches réglementaires et gants de protection jetables fournis et obligatoires pour chaque manipulation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery & Campus Life Section -->
+    <section id="galerie" class="section" style="background-color: #F1F5F9;">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold">Vie Scolaire & Épanouissement</span>
+          <h2 class="section-title">Galerie du Campus & Activités</h2>
+          <p class="section-subtitle">Découvrez l'ambiance d'apprentissage, la vie dans la bibliothèque et les séances de travaux pratiques.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openImageLightBox('images/library.jpg', 'Bibliothèque du Campus', 'Espace d\'étude calme et connecté pour les recherches des élèves')">
+            <img src="images/library.jpg" alt="Bibliothèque moderne du Collège">
+            <div class="gallery-overlay">
+              <h4>Bibliothèque & Médiathèque</h4>
+              <p>Groupes d'études et recherche numérique</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openImageLightBox('images/physics.jpg', 'Laboratoire de Physique', 'Manipulations et montages sur plaques à essai')">
+            <img src="images/physics.jpg" alt="TP de Physique">
+            <div class="gallery-overlay">
+              <h4>TP de Physique-Électricité</h4>
+              <p>Section Anglophone & Francophone</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openImageLightBox('images/chemistry.jpg', 'Laboratoire de Chimie', 'Titrations volumétriques avec burettes et erlenmeyers')">
+            <img src="images/chemistry.jpg" alt="TP de Chimie">
+            <div class="gallery-overlay">
+              <h4>TP de Chimie Organique & Minérale</h4>
+              <p>Dosages volumétriques de précision</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openImageLightBox('images/biology.jpg', 'Laboratoire de Biologie Marine', 'Observation et dissection d\'étoiles de mer, crustacés et huîtres')">
+            <img src="images/biology.jpg" alt="TP de Biologie Marine">
+            <div class="gallery-overlay">
+              <h4>Biologie Marine & Zoologie</h4>
+              <p>Observation au microscope & dissections</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openImageLightBox('images/hero.jpg', 'Campus Principal', 'Vue sur le bâtiment principal et la cour des élèves')">
+            <img src="images/hero.jpg" alt="Élèves sur le campus">
+            <div class="gallery-overlay">
+              <h4>Cour Principale du Campus</h4>
+              <p>Rassemblement et uniforme réglementaire</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openImageLightBox('images/principal.jpg', 'Direction & Administration', 'Le bureau du Proviseur au Collège Bilingue Horizon Excellence')">
+            <img src="images/principal.jpg" alt="Direction Générale">
+            <div class="gallery-overlay">
+              <h4>Direction & Encadrement</h4>
+              <p>Suivi personnalisé de chaque élève</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions & Contact Form -->
+    <section id="admission" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Inscriptions Ouvertes</span>
+          <h2 class="section-title">Demande de Pré-Inscription 2026-2027</h2>
+          <p class="section-subtitle">Remplissez ce formulaire pour réserver une place ou solliciter un entretien d'admission pour votre enfant.</p>
+        </div>
+
+        <div class="admission-card">
+          <form id="admissionForm" onsubmit="handleAdmissionSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="parentName">Nom complet du Parent / Tuteur *</label>
+                <input type="text" id="parentName" class="form-control" placeholder="ex: M. TCHAMBA Paul" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="parentPhone">Numéro de Téléphone WhatsApp *</label>
+                <input type="tel" id="parentPhone" class="form-control" placeholder="ex: +237 699 00 11 22" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="parentEmail">Adresse Email</label>
+                <input type="email" id="parentEmail" class="form-control" placeholder="ex: parent@gmail.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="studentName">Nom & Prénom de l'Élève *</label>
+                <input type="text" id="studentName" class="form-control" placeholder="ex: KENGNE Marie-Claire" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subsystemSelect">Section Souhaitée *</label>
+                <select id="subsystemSelect" class="form-control" required>
+                  <option value="">-- Sélectionner la section --</option>
+                  <option value="francophone">Section Francophone (6ème - Terminale)</option>
+                  <option value="anglophone">Anglophone Section (Form 1 - Upper Sixth)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="levelSelect">Classe Visée *</label>
+                <select id="levelSelect" class="form-control" required>
+                  <option value="">-- Choisir la classe --</option>
+                  <option value="6eme_form1">6ème / Form 1</option>
+                  <option value="5eme_form2">5ème / Form 2</option>
+                  <option value="4eme_form3">4ème / Form 3</option>
+                  <option value="3eme_form4">3ème / Form 4</option>
+                  <option value="2nde_form5">2nde / Form 5 (GCE O-Level)</option>
+                  <option value="1ere_lower6">1ère / Lower Sixth</option>
+                  <option value="tlo_upper6">Terminale / Upper Sixth (BAC / GCE A-Level)</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="message">Remarques ou questions particulières</label>
+                <textarea id="message" rows="4" class="form-control" placeholder="Precisez vos questions sur les options scientifiques, la demi-pension ou le transport scolaire..."></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+              <button type="submit" class="btn btn-primary" style="padding: 0.9rem 2.5rem; font-size: 1.05rem;">
+                <i class="fa-solid fa-paper-plane"></i> Soumettre la Demande d'Admission
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Strictly positioned at bottom) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-badge" style="background: var(--royal-blue);">H</div>
+            <div class="logo-text">
+              <span class="logo-title" style="color: white;">HORIZON EXCELLENCE</span>
+              <span class="logo-subtitle" style="color: var(--accent-cyan);">Collège Bilingue Cameroun</span>
+            </div>
+          </div>
+          <p>
+            Établissement bilingue de référence au Cameroun. Formation complète en sections Anglophone et Francophone avec 3 laboratoires de pratique scientifique de haut niveau.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#accueil"><i class="fa-solid fa-chevron-right"></i> Accueil</a></li>
+            <li><a href="#subsystems"><i class="fa-solid fa-chevron-right"></i> Sections Francophone/Anglophone</a></li>
+            <li><a href="#laboratoires"><i class="fa-solid fa-chevron-right"></i> Laboratoires & TP</a></li>
+            <li><a href="#apropos"><i class="fa-solid fa-chevron-right"></i> À Propos de l'école</a></li>
+            <li><a href="#galerie"><i class="fa-solid fa-chevron-right"></i> Vie Scolaire</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Laboratoires TP</h4>
+          <ul class="footer-links">
+            <li><a href="#laboratoires" onclick="switchLab('physics')"><i class="fa-solid fa-bolt"></i> Physique (Breadboards)</a></li>
+            <li><a href="#laboratoires" onclick="switchLab('chemistry')"><i class="fa-solid fa-vial"></i> Chimie (Burettes & Titrations)</a></li>
+            <li><a href="#laboratoires" onclick="switchLab('biology')"><i class="fa-solid fa-fish"></i> Biologie (Étoiles de mer & Huîtres)</a></li>
+            <li><a href="#laboratoires"><i class="fa-solid fa-user-nurse"></i> Normes Blouses & Gants Blancs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Douala & Yaoundé, Cameroun</li>
+            <li><i class="fa-solid fa-phone" style="color: var(--accent-cyan);"></i> +237 699 00 11 22 / 677 33 44 55</li>
+            <li><i class="fa-solid fa-envelope" style="color: var(--accent-cyan);"></i> contact@horizon-excellence.cm</li>
+            <li><i class="fa-solid fa-clock" style="color: var(--accent-gold);"></i> Lun - Ven : 07h30 - 16h00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Collège Bilingue Horizon Excellence (Cameroun). Tous droits réservés.
+        </div>
+        <div style="display: flex; gap: 1rem; font-size: 1.2rem;">
+          <a href="#" style="color: white;" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" style="color: white;" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" style="color: white;" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" style="color: white;" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container">
+    <div id="toastNotification" class="toast">
+      <i class="fa-solid fa-circle-check" style="color: var(--accent-cyan); font-size: 1.4rem;"></i>
+      <span id="toastMessage">Votre demande a été soumise avec succès !</span>
+    </div>
+  </div>
+
+  <!-- Interactive Lab Detail Modal -->
+  <div id="labModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('labModal')"><i class="fa-solid fa-xmark"></i></button>
+      <div id="labModalContent">
+        <!-- Modal Content Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Program Details Modal -->
+  <div id="programModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('programModal')"><i class="fa-solid fa-xmark"></i></button>
+      <div id="programModalContent">
+        <!-- Modal Content Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightboxModal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 800px; padding: 1.5rem; text-align: center;">
+      <button class="modal-close" onclick="closeModal('lightboxModal')"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightboxImage" src="" alt="" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: var(--radius-md); margin-bottom: 1rem;">
+      <h3 id="lightboxTitle" style="margin-bottom: 0.4rem; color: var(--primary-navy);"></h3>
+      <p id="lightboxCaption" style="color: var(--text-muted); font-size: 0.95rem;"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
