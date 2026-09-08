@@ -1,0 +1,22 @@
+name: Déploiement Continu FTP
+
+on:
+  push:
+    branches:
+      - main  # Vérifiez bien que votre branche principale s'appelle bien 'main' (ou modifiez par 'master')
+
+jobs:
+  web-deploy:
+    name: 🎉 Déploiement vers InfinityFree
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Récupération du code source
+      uses: actions/checkout@v4
+
+    - name: 🚀 Transfert des fichiers par FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftpupload.net
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /htdocs/
