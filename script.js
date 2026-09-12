@@ -19,24 +19,24 @@ const labData = {
       "Prépa TP GCE Physics Practicals & BAC C/D"
     ],
     modalContent: `
-      <div style="text-align: left;">
-        <span class="badge badge-cyan" style="margin-bottom: 0.8rem;">Fiche Technique TP Physique</span>
-        <h3 style="font-size: 1.6rem; color: var(--primary-navy); margin-bottom: 1rem;">Montage de Circuits & Mesures Électriques sur Plaque à Essai</h3>
-        <img src="images/physics.jpg" alt="TP Physique" style="width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.2rem;">
+      <div class="modal-body-container">
+        <span class="badge badge-cyan modal-badge">Fiche Technique TP Physique</span>
+        <h3 class="modal-title">Montage de Circuits & Mesures Électriques sur Plaque à Essai</h3>
+        <img src="images/physics.jpg" alt="TP Physique" class="modal-img">
         
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Objectifs Pédagogiques :</h4>
-        <ul style="padding-left: 1.2rem; color: var(--text-main); font-size: 0.95rem; margin-bottom: 1rem;">
+        <h4 class="modal-subtitle">Objectifs Pédagogiques :</h4>
+        <ul class="modal-list">
           <li>Apprendre le branchement des composants (résistances, LED, condensateurs) sur plaque à essai sans soudure.</li>
           <li>Mesurer la différence de potentiel (DDP) et l'intensité du courant continu au multimètre.</li>
-          <li>Vérifier la loi d'Ohm \\(U = R \\times I\\) et tracer les caractéristiques des dipôles.</li>
+          <li>Vérifier la loi d'Ohm \(U = R \times I\) et tracer les caractéristiques des dipôles.</li>
         </ul>
 
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Équipements de Protection Indispensables :</h4>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-          <i class="fa-solid fa-user-nurse" style="color: var(--accent-gold);"></i> <strong>Blouse blanche en coton</strong> et <strong>gants blancs de sécurité</strong> portés durant toute la séance de TP.
+        <h4 class="modal-subtitle">Équipements de Protection Indispensables :</h4>
+        <p class="modal-text">
+          <i class="fa-solid fa-user-nurse icon-gold"></i> <strong>Blouse blanche en coton</strong> et <strong>gants blancs de sécurité</strong> portés durant toute la séance de TP.
         </p>
 
-        <button class="btn btn-primary" onclick="closeModal('labModal')" style="width: 100%;">Fermer la fiche</button>
+        <button class="btn btn-primary modal-close-btn" onclick="closeModal('labModal')">Fermer la fiche</button>
       </div>
     `
   },
@@ -55,24 +55,24 @@ const labData = {
       "Conforme GCE Chemistry Practicals & BAC D/C"
     ],
     modalContent: `
-      <div style="text-align: left;">
-        <span class="badge badge-primary" style="margin-bottom: 0.8rem; background: rgba(236,72,153,0.15); color: #EC4899;">Fiche Technique TP Chimie</span>
-        <h3 style="font-size: 1.6rem; color: var(--primary-navy); margin-bottom: 1rem;">Dosage Volumétrique Acide-Base (Titration)</h3>
-        <img src="images/chemistry.jpg" alt="TP Chimie" style="width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.2rem;">
+      <div class="modal-body-container">
+        <span class="badge badge-primary modal-badge modal-badge-pink">Fiche Technique TP Chimie</span>
+        <h3 class="modal-title">Dosage Volumétrique Acide-Base (Titration)</h3>
+        <img src="images/chemistry.jpg" alt="TP Chimie" class="modal-img">
         
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Procédure Expérimentale :</h4>
-        <ul style="padding-left: 1.2rem; color: var(--text-main); font-size: 0.95rem; margin-bottom: 1rem;">
+        <h4 class="modal-subtitle">Procédure Expérimentale :</h4>
+        <ul class="modal-list">
           <li>Remplissage et ajustement du zéro de la burette avec la solution titrante d'acide chlorhydrique (HCl).</li>
           <li>Prélèvement précis à la pipette d'une solution de soude (NaOH) introduite dans l'erlenmeyer avec quelques gouttes d'indicateur.</li>
           <li>Versage goutte à goutte jusqu'au virage persistant de la couleur au point d'équivalence.</li>
         </ul>
 
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Consignes de Sécurité Strictes :</h4>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-          <i class="fa-solid fa-shield-virus" style="color: #EC4899;"></i> Port obligatoire de la <strong>blouse blanche à manches longues</strong>, des <strong>gants blancs étanches</strong> et des lunettes de protection.
+        <h4 class="modal-subtitle">Consignes de Sécurité Strictes :</h4>
+        <p class="modal-text">
+          <i class="fa-solid fa-shield-virus icon-pink"></i> Port obligatoire de la <strong>blouse blanche à manches longues</strong>, des <strong>gants blancs étanches</strong> et des lunettes de protection.
         </p>
 
-        <button class="btn btn-primary" onclick="closeModal('labModal')" style="width: 100%;">Fermer la fiche</button>
+        <button class="btn btn-primary modal-close-btn" onclick="closeModal('labModal')">Fermer la fiche</button>
       </div>
     `
   },
@@ -91,24 +91,24 @@ const labData = {
       "Programme GCE Biology Practicals & SVT Bac D"
     ],
     modalContent: `
-      <div style="text-align: left;">
-        <span class="badge badge-cyan" style="margin-bottom: 0.8rem; background: rgba(16,185,129,0.15); color: #10B981;">Fiche Technique TP Biologie Marine</span>
-        <h3 style="font-size: 1.6rem; color: var(--primary-navy); margin-bottom: 1rem;">Observation & Dissection d'Invertébrés Marines</h3>
-        <img src="images/biology.jpg" alt="TP Biologie Marine" style="width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.2rem;">
+      <div class="modal-body-container">
+        <span class="badge badge-cyan modal-badge modal-badge-teal">Fiche Technique TP Biologie Marine</span>
+        <h3 class="modal-title">Observation & Dissection d'Invertébrés Marines</h3>
+        <img src="images/biology.jpg" alt="TP Biologie Marine" class="modal-img">
         
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Activités Pratiques au Programme :</h4>
-        <ul style="padding-left: 1.2rem; color: var(--text-main); font-size: 0.95rem; margin-bottom: 1rem;">
+        <h4 class="modal-subtitle">Activités Pratiques au Programme :</h4>
+        <ul class="modal-list">
           <li>Étude morphologique externe et anatomique des <strong>étoiles de mer</strong> (système aquifère).</li>
           <li>Dissection fine des <strong>crustacés</strong> et analyse des branches et de la carapace.</li>
           <li>Observation des coquilles d'<strong>huîtres</strong> et prélèvement de tissus pour étude au microscope.</li>
         </ul>
 
-        <h4 style="color: var(--royal-blue); margin-bottom: 0.5rem;">Équipement de Protection Indispensable :</h4>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-          <i class="fa-solid fa-hand-holding-medical" style="color: #10B981;"></i> Les élèves portent obligatoirement la <strong>blouse blanche scientifique</strong> et des <strong>gants blancs jetables</strong> pour toute manipulation d'animaux marins.
+        <h4 class="modal-subtitle">Équipement de Protection Indispensable :</h4>
+        <p class="modal-text">
+          <i class="fa-solid fa-hand-holding-medical icon-teal"></i> Les élèves portent obligatoirement la <strong>blouse blanche scientifique</strong> et des <strong>gants blancs jetables</strong> pour toute manipulation d'animaux marins.
         </p>
 
-        <button class="btn btn-primary" onclick="closeModal('labModal')" style="width: 100%;">Fermer la fiche</button>
+        <button class="btn btn-primary modal-close-btn" onclick="closeModal('labModal')">Fermer la fiche</button>
       </div>
     `
   }
@@ -160,45 +160,45 @@ function openProgramDetails(subsystem) {
   let content = '';
   if (subsystem === 'francophone') {
     content = `
-      <div style="text-align: left;">
-        <span class="badge badge-primary" style="margin-bottom: 0.8rem;">Détails Sous-Système Francophone</span>
-        <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem;">Programme d'Enseignement Francophone (Cameroun)</h3>
+      <div class="modal-body-container">
+        <span class="badge badge-primary modal-badge">Détails Sous-Système Francophone</span>
+        <h3 class="modal-title">Programme d'Enseignement Francophone (Cameroun)</h3>
         
-        <div style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--royal-blue);"><i class="fa-solid fa-book"></i> Premier Cycle (6ème, 5ème, 4ème, 3ème)</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Formation de base solide en Français, Anglais, Mathématiques, SVT, Physique-Chimie, Histoire-Géo, Informatique. Examen sanctionnant : <strong>BEPC</strong>.</p>
+        <div class="modal-section-item">
+          <h4 class="modal-subtitle"><i class="fa-solid fa-book"></i> Premier Cycle (6ème, 5ème, 4ème, 3ème)</h4>
+          <p class="modal-text">Formation de base solide en Français, Anglais, Mathématiques, SVT, Physique-Chimie, Histoire-Géo, Informatique. Examen sanctionnant : <strong>BEPC</strong>.</p>
         </div>
 
-        <div style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--royal-blue);"><i class="fa-solid fa-atom"></i> Second Cycle Scientifique (Séries C, D, TI)</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);"><strong>Série C</strong> : Mathématiques & Physique de haut niveau.<br><strong>Série D</strong> : Sciences de la Vie et de la Terre & Chimie expérimentale.<br><strong>Série TI</strong> : Technologies de l'Information et Algorithmique.</p>
+        <div class="modal-section-item">
+          <h4 class="modal-subtitle"><i class="fa-solid fa-atom"></i> Second Cycle Scientifique (Séries C, D, TI)</h4>
+          <p class="modal-text"><strong>Série C</strong> : Mathématiques & Physique de haut niveau.<br><strong>Série D</strong> : Sciences de la Vie et de la Terre & Chimie expérimentale.<br><strong>Série TI</strong> : Technologies de l'Information et Algorithmique.</p>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--royal-blue);"><i class="fa-solid fa-award"></i> Examens préparés</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Probatoire (Classe de 1ère) et Baccalauréat Général / Technique (Classe de Terminale).</p>
+        <div class="modal-section-item">
+          <h4 class="modal-subtitle"><i class="fa-solid fa-award"></i> Examens préparés</h4>
+          <p class="modal-text">Probatoire (Classe de 1ère) et Baccalauréat Général / Technique (Classe de Terminale).</p>
         </div>
 
-        <button class="btn btn-primary" onclick="closeModal('programModal')" style="width: 100%;">Fermer</button>
+        <button class="btn btn-primary modal-close-btn" onclick="closeModal('programModal')">Fermer</button>
       </div>
     `;
   } else {
     content = `
-      <div style="text-align: left;">
-        <span class="badge badge-cyan" style="margin-bottom: 0.8rem;">Anglophone Subsystem Details</span>
-        <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem;">Cameroon Anglophone Education Syllabus</h3>
+      <div class="modal-body-container">
+        <span class="badge badge-cyan modal-badge">Anglophone Subsystem Details</span>
+        <h3 class="modal-title">Cameroon Anglophone Education Syllabus</h3>
         
-        <div style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--royal-blue);"><i class="fa-solid fa-book"></i> First Cycle (Forms 1 to 5)</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Core subjects: English Language, Mathematics, Physics, Chemistry, Biology, French, History, Economics, Computer Science. Examination: <strong>GCE Ordinary Level (O-Level)</strong>.</p>
+        <div class="modal-section-item">
+          <h4 class="modal-subtitle"><i class="fa-solid fa-book"></i> First Cycle (Forms 1 to 5)</h4>
+          <p class="modal-text">Core subjects: English Language, Mathematics, Physics, Chemistry, Biology, French, History, Economics, Computer Science. Examination: <strong>GCE Ordinary Level (O-Level)</strong>.</p>
         </div>
 
-        <div style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--royal-blue);"><i class="fa-solid fa-flask"></i> High School Science Stream (Lower & Upper Sixth)</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Combinations: Physics-Chemistry-Maths (PCM), Biology-Chemistry-Physics (BCP), Maths-Further Maths-Physics. Examination: <strong>GCE Advanced Level (A-Level)</strong> with full laboratory practical tests.</p>
+        <div class="modal-section-item">
+          <h4 class="modal-subtitle"><i class="fa-solid fa-flask"></i> High School Science Stream (Lower & Upper Sixth)</h4>
+          <p class="modal-text">Combinations: Physics-Chemistry-Maths (PCM), Biology-Chemistry-Physics (BCP), Maths-Further Maths-Physics. Examination: <strong>GCE Advanced Level (A-Level)</strong> with full laboratory practical tests.</p>
         </div>
 
-        <button class="btn btn-primary" onclick="closeModal('programModal')" style="width: 100%;">Close</button>
+        <button class="btn btn-primary modal-close-btn" onclick="closeModal('programModal')">Close</button>
       </div>
     `;
   }
