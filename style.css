@@ -1000,13 +1000,13 @@ textarea.form-control {
 
 .footer-brand p {
   margin-top: 1rem;
-  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
   line-height: 1.65;
 }
 
 .footer-title {
   color: white;
-  font-size: clamp(1.05rem, 1.2vw + 0.2rem, 1.25rem);
+  font-size: clamp(1.1rem, 1.35vw, 1.3rem);
   margin-bottom: 1.2rem;
   font-weight: 700;
 }
@@ -1019,7 +1019,7 @@ textarea.form-control {
 }
 
 .footer-links a, .footer-contact li {
-  font-size: clamp(0.88rem, 1.1vw, 0.95rem);
+  font-size: clamp(0.92rem, 1.15vw, 1rem);
   color: #94A3B8;
 }
 
@@ -1045,7 +1045,7 @@ textarea.form-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: clamp(0.85rem, 1.1vw, 0.92rem);
+  font-size: clamp(0.88rem, 1.1vw, 0.95rem);
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -1617,23 +1617,38 @@ textarea.form-control {
   /* Normalize Body Text & Paragraphs across ALL Sections */
   p, .section-subtitle, .hero-description, .lab-content p, .subsystem-desc, 
   .principal-quote, .about-main-desc, .about-feature-text, .modal-text, 
-  .modal-list, .admission-card p, .footer-brand p, .footer-links a, .footer-contact li, .lightbox-caption {
+  .modal-list, .admission-card p, .lightbox-caption {
     font-size: 0.88rem !important;
     line-height: 1.55 !important;
   }
 
+  .footer-brand p, .footer-links a, .footer-contact li {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
   /* Normalize Headings Level 4 */
-  h4, .principal-info h4, .gallery-overlay h4, .footer-title, .footer-contact h4, .about-feature-title, .modal-subtitle {
+  h4, .principal-info h4, .gallery-overlay h4, .about-feature-title, .modal-subtitle {
     font-size: 0.98rem !important;
     line-height: 1.35 !important;
   }
 
-  /* Normalize Small Captions, Labels, Badges, Features & Footer Bottom */
+  .footer-title, .footer-contact h4 {
+    font-size: 1.05rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  /* Normalize Small Captions, Labels, Badges & Features */
   .badge, .stat-label, .form-label, .gallery-overlay p, 
   .top-bar, .subsystem-features li, .lab-specs-list li, .lab-equipment-tag, 
-  .floating-badge-subtitle, .subsystem-subtitle, .principal-info p, .footer-bottom {
+  .floating-badge-subtitle, .subsystem-subtitle, .principal-info p {
     font-size: 0.84rem !important;
     line-height: 1.45 !important;
+  }
+
+  .footer-bottom {
+    font-size: 0.88rem !important;
   }
 
   .footer-contact h4 {
@@ -1737,22 +1752,36 @@ textarea.form-control {
     font-size: 1.05rem !important;
   }
 
-  h4, .principal-info h4, .gallery-overlay h4, .footer-title, .footer-contact h4, .about-feature-title, .modal-subtitle {
+  h4, .principal-info h4, .gallery-overlay h4, .about-feature-title, .modal-subtitle {
     font-size: 0.92rem !important;
+  }
+
+  .footer-title, .footer-contact h4 {
+    font-size: 0.98rem !important;
+    margin-bottom: 0.6rem !important;
   }
 
   p, .section-subtitle, .hero-description, .lab-content p, .subsystem-desc, 
   .principal-quote, .about-main-desc, .about-feature-text, .modal-text, 
-  .modal-list, .admission-card p, .footer-brand p, .footer-links a, .footer-contact li {
+  .modal-list, .admission-card p {
     font-size: 0.84rem !important;
     line-height: 1.5 !important;
   }
 
+  .footer-brand p, .footer-links a, .footer-contact li {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+  }
+
   .badge, .stat-label, .form-label, .gallery-overlay p, 
   .top-bar, .subsystem-features li, .lab-specs-list li, .lab-equipment-tag, 
-  .subsystem-subtitle, .footer-bottom {
+  .subsystem-subtitle {
     font-size: 0.8rem !important;
     line-height: 1.4 !important;
+  }
+
+  .footer-bottom {
+    font-size: 0.84rem !important;
   }
 
   .footer-contact h4 {
