@@ -977,6 +977,15 @@ textarea.form-control {
   box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
 }
 
+.form-control::placeholder,
+.form-control::-webkit-input-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder {
+  color: var(--text-light);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  opacity: 0.85;
+}
+
 /* Footer - Locked to Bottom */
 .footer {
   flex-shrink: 0;
@@ -1349,6 +1358,10 @@ textarea.form-control {
     padding-left: 2.25rem !important;
     padding-right: 2.25rem !important;
   }
+  .footer .container {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1575,8 +1588,18 @@ textarea.form-control {
   }
 
   .container {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 2.25rem !important;
+    padding-right: 2.25rem !important;
+  }
+
+  .footer .container {
+    padding-left: 2.25rem !important;
+    padding-right: 2.25rem !important;
+  }
+
+  .footer-grid {
+    gap: 2rem !important;
+    margin-bottom: 2.5rem !important;
   }
 
   /* Responsive Image Constraints */
@@ -1620,6 +1643,13 @@ textarea.form-control {
   .modal-list, .admission-card p, .lightbox-caption {
     font-size: 0.88rem !important;
     line-height: 1.55 !important;
+  }
+
+  .form-control::placeholder,
+  .form-control::-webkit-input-placeholder,
+  .form-control::-moz-placeholder,
+  .form-control:-ms-input-placeholder {
+    font-size: 0.88rem !important;
   }
 
   .footer-brand p, .footer-links a, .footer-contact li {
@@ -1681,8 +1711,18 @@ textarea.form-control {
   }
 
   .container {
-    padding-left: 1.75rem !important;
-    padding-right: 1.75rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .footer .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .footer-grid {
+    gap: 1.8rem !important;
+    margin-bottom: 1.8rem !important;
   }
 
   /* Small Phone Image Scale Constraints */
@@ -1766,6 +1806,13 @@ textarea.form-control {
   .modal-list, .admission-card p {
     font-size: 0.84rem !important;
     line-height: 1.5 !important;
+  }
+
+  .form-control::placeholder,
+  .form-control::-webkit-input-placeholder,
+  .form-control::-moz-placeholder,
+  .form-control:-ms-input-placeholder {
+    font-size: 0.84rem !important;
   }
 
   .footer-brand p, .footer-links a, .footer-contact li {
